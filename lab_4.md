@@ -4,7 +4,7 @@
 
 import csv
 
-# Для систем, отличных от Windows, указываем кодировку
+
 with open("stud.csv", encoding='windows-1251') as file:
     csv_file = csv.reader(file, delimiter=";")
     header = next(csv_file, None)  # пропустить заголовки
@@ -26,7 +26,7 @@ print("Входных признаков:", x_len)
 print(x_names)
 print()
 
-############################################
+
 
 print("Правда ли, что все студенты старше 2 курса старше 18 лет?")
 val = True  # значение высказывания
